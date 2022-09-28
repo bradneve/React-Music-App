@@ -1,0 +1,8 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+.current {
+    color: orangered
+}

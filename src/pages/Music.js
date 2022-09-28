@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { LikeButton, AlbumInfo, Artist } from "../components";
+import './music.css'
 
 export const Music = () => {
 
@@ -25,7 +26,7 @@ export const Music = () => {
           <h1>A few of my favourite artists:</h1>
           <Artist />
           <h1>Some of their best albums</h1>
-          <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+          <div className="albumContainer">
             <div>
               <AlbumInfo album={albums[0]} />
               <LikeButton />
