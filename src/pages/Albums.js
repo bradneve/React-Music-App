@@ -17,21 +17,21 @@ export const Albums = () => {
         <div>
         <Link className={'links'} to="Malibu">
           <AlbumInfo album={albums[0]} />
-          <LikeButton />
         </Link>
+          <LikeButton />
         </div>
         <div >
         <Link className={'links'} to="Bandana">
           <AlbumInfo album={albums[1]} />
-          <LikeButton />
         </Link>
+          <LikeButton />
         </div>
         <div>
           <Link className={'links'} to="Sixteen Oceans">
             <AlbumInfo album={albums[2]} />
-            <LikeButton />
 
           </Link>
+            <LikeButton />
         </div>
       </div>
     </>
