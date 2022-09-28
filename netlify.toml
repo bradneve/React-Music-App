@@ -1,0 +1,7 @@
+[build]
+    command = "npm run build"
+    publish = "/build" 
+[[redirects]]
+    from = "/*" # redirect any path
+    to = "/index.html" # to this html page
+    status = 200 # with this status
