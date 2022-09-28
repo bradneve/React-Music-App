@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { AlbumInfo, LikeButton } from '../components'
 
 
 export const Album = () => {
-    const [albums, SetAlbums] = useState([
+    const albums = [
         { title: 'Malibu', artist: 'Anderson .Paak', release: '2016', coverSrc: 'malibu.jpg' },
         { title: 'Bandana', artist: 'Freddie Gibbs', release: '2019', coverSrc: 'Bandana_freddie_gibbs.jpeg' },
         { title: 'Sixteen Oceans', artist: 'Four Tet', release: '2020', coverSrc: 'Four_Tet_-_Sixteen_Oceans.png' }
-      ])
+      ]
 
       
   return (
