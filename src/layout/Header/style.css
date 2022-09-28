@@ -1,8 +1,21 @@
 ul{
     display: flex;
+    padding-bottom: 20px;
     justify-content: space-between;
+    font-size: 30px;
+    border-bottom-style: solid;
 }
 
-.current {
-    color: orangered
+.navFont{
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+}
+
+.current, .current:hover {
+    color: orangered;
+    font-weight: bold;
+    font-size: 35px;
+    text-decoration: none;
+    cursor:default;
 }

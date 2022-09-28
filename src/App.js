@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Routes, Route } from "react-router-dom";
-import { Music } from './pages/Music';
+import { Artist } from './pages/Artist';
 import { Home } from './pages/Home';
 import { Header, Footer } from './layout/index'
+import { Album } from './pages/Album';
 
 const App = () => {
   const [red, setRed] = useState(0);
@@ -20,7 +21,8 @@ const App = () => {
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
-            <Route path="/artists" element={<Music />}></Route>
+            <Route path="/artists" element={<Artist />}></Route>
+            <Route path="/albums" element={<Album />}></Route>
             
           </Routes>
 
