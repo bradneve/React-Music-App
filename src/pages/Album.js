@@ -12,6 +12,10 @@ export function Album() {
         { title: 'Sixteen Oceans', artist: 'Four Tet', release: '2020', coverSrc: '../Four_Tet_-_Sixteen_Oceans.png' }
       ]
 
+    const tracklists = {
+        malibu: ['The Bird', 'Heart Don\'t Stand a Chance', 'The Waters (Ft. BJ the Chicago Kid)', 'The Season / Carry Me', 'Put Me Thru', 'Am I Wrong (Ft. ScHoolboy Q)', 'Without You (Ft. Rapsody', 'Parking Lot' ]
+    }
+
 
     const album = useParams().album
     const myObj = albums.find(obj => obj.title === album)
