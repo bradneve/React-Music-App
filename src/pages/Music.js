@@ -4,13 +4,7 @@ import './music.css'
 
 export const Music = () => {
 
-  const [red, setRed] = useState(true);
-  useEffect(() => {
-    const intervalID = setInterval(() => {
-      setRed(red => !red);
-    }, 2000);
-    return () => clearInterval(intervalID);
-  }, []);
+
 
   const [albums, SetAlbums] = useState([
     { title: 'Malibu', artist: 'Anderson .Paak', release: '2016', coverSrc: 'malibu.jpg' },
@@ -21,8 +15,7 @@ export const Music = () => {
   return (
     <>
 
-      <div style={{ backgroundImage: red ? 'url(malibu.jpg)' : 'url(Four_Tet_-_Sixteen_Oceans.png)', padding: '100px' }}>
-        <div style={{backgroundColor: 'palegreen', padding: '100px', borderStyle: 'solid', borderImage: 'linear-gradient(red, transparent) 1', borderBottom: '0'}}>
+        
           <h1>A few of my favourite artists:</h1>
           <Artist />
           <h1>Some of their best albums</h1>
@@ -41,9 +34,6 @@ export const Music = () => {
             </div>
           </div>
 
-        </div>
-
-      </div>
     </>
 
   )
