@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import { Artist } from './pages/Artist';
 import { Home } from './pages/Home';
 import { Header, Footer } from './layout/index'
+import { Albums } from './pages/Albums';
 import { Album } from './pages/Album';
 
 const App = () => {
@@ -22,7 +23,8 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />}></Route>
             <Route path="/artists" element={<Artist />}></Route>
-            <Route path="/albums" element={<Album />}></Route>
+            <Route path="/albums" element={<Albums />}></Route>
+            <Route path="/albums/:person" element={<Album />}></Route>
             
           </Routes>
 
