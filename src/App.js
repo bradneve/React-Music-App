@@ -16,7 +16,7 @@ const App = () => {
   return (
     <>
       <div style={{ backgroundImage: red === 0 ? 'url(malibu.jpg)' : red === 1 ? 'url(Four_Tet_-_Sixteen_Oceans.png)' : 'url(Bandana_freddie_gibbs.jpeg)', padding: '100px' }}>
-        <div style={{ backgroundColor: red === 0 ? '#8bb988' : red === 1 ? '#505760' : '#252125', color: red === 0 ? '#af0f13' : red === 1 ? '#cbd3e0' : '#0a4b61', padding: '100px', borderStyle: 'solid', borderImage: 'linear-gradient(red, transparent) 1', borderBottom: '0' }}>
+        <div style={{ backgroundColor: red === 0 ? '#8bb988' : red === 1 ? '#505760' : '#252125', color: red === 0 ? '#af0f13' : red === 1 ? '#cbd3e0' : '#0a4b61', padding: '100px'}}>
           <Header />
           <Routes>
             <Route path="/" element={<Home />}></Route>
