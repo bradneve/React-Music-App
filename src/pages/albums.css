@@ -1,0 +1,14 @@
+.links {
+    text-decoration: none;
+    color: inherit;
+    font-weight: bold;
+    transition: all .2s ease-in-out
+}
+
+.links:hover div img {
+    transform: scale(1.05);
+}
+
+.links:hover {
+    color: inherit;
+}
