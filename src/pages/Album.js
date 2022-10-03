@@ -19,12 +19,13 @@ export function Album() {
 
     const album = useParams().album
     const myObj = albums.find(obj => obj.title === album)
-    console.log(myObj);
 
   return (
+    
+    console.log(myObj.title),
     <div className="content">
         <AlbumInfo album={myObj} />
-          <LikeButton />
+          <LikeButton id={myObj.title === 'Malibu' ? '0' : myObj.title === 'Bandana' ? '1' : '2'}/>
     </div>
     
   );

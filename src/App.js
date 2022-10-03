@@ -15,6 +15,7 @@ const App = () => {
     return () => clearInterval(intervalID);
   }, []);
 
+
   return (
     <>
       <div style={{ backgroundImage: red === 0 ? 'url(malibu.jpg)' : red === 1 ? 'url(Four_Tet_-_Sixteen_Oceans.png)' : 'url(Bandana_freddie_gibbs.jpeg)', padding: '100px' }}>

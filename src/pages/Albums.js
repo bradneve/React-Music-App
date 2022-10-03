@@ -18,20 +18,20 @@ export const Albums = () => {
         <Link className={'links'} to="Malibu">
           <AlbumInfo album={albums[0]} />
         </Link>
-          <LikeButton />
+          <LikeButton id='0'/>
         </div>
         <div >
         <Link className={'links'} to="Bandana">
           <AlbumInfo album={albums[1]} />
         </Link>
-          <LikeButton />
+          <LikeButton id='1'/>
         </div>
         <div>
           <Link className={'links'} to="Sixteen Oceans">
             <AlbumInfo album={albums[2]} />
 
           </Link>
-            <LikeButton />
+            <LikeButton id='2'/>
         </div>
       </div>
     </>
